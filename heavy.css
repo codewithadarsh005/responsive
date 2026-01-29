@@ -1,0 +1,361 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(1, 1, 14);
+    color: white;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 6px 2px rgb(36, 35, 35);
+    padding: 20px;
+    background-color:rgb(1, 1, 14);
+
+    cursor: pointer;
+}
+.ulist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menuList li a{
+    margin-inline: 25px;
+    text-decoration: none;
+    color: white;
+}
+#menuList{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-right: 62px;
+    margin-top: 6px;
+}
+#menuList li button{
+    width: 100px;
+    height: 34px;
+    background-color: rgb(143, 158, 30);
+    /* border: 2px solid white; */
+    border: none;
+    color: white;
+    font-size: 18px;
+    /* border-radius: 2px; */
+}
+#menuList button:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+    color: rgb(143, 158, 30);
+     
+}
+#menuList li a:hover{
+    color: rgb(143, 158, 30);
+    border-bottom: 2px solid rgb(143, 158, 30);
+}
+nav .logo{
+    margin-left: 33px;
+    margin-top: 3px;
+    font-size: 23px;
+    color: rgb(143, 158, 30);
+}
+#menuList li{
+    list-style: none;
+}
+
+.icon {
+    display: none;
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+}
+.close {
+    display: none;
+}
+
+/* HEAVY WORKOUT SECTION */
+
+.heavy-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation-name:slideLeft;
+    animation-duration: 1s;
+}
+@keyframes slideLeft {
+   from{transform:translateX(300%)}
+}
+.heavy-img img {
+    width: 50%;
+    height: auto;
+    margin-top: 120px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation:appear 5s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
+}
+
+ @keyframes appear {
+       from{ 
+        opacity: 1;
+        scale: 0.5; 
+        /* opacity: 0;
+        transform: translateX(-100px); */
+    }
+    to{
+         opacity: 1;
+        scale: 1; 
+        /* opacity:1;
+        transform: translateX(0px); */
+    }
+    }
+.text {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    width: 98%;
+}
+.text p {
+    font-size: 20px;
+    margin-left: 35px;
+}
+.text ul {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(143, 158, 30);
+}
+.text li {
+    font-size: 20px;
+    text-decoration: dotted;
+    color: white;
+    font-weight: normal;
+    margin-left: 80px;
+}
+hr {
+    width: 98%;
+    border:  1px solid rgba(129, 129, 128, 0.9);
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(143, 158, 30);
+    margin-top: 30px;
+    margin-left: 15px;
+}
+p{
+    font-size: 20px;
+    margin-left: 35px;
+}
+.frequency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text1 {
+    width: 40%;
+    height: auto;
+    text-align: left;
+    margin-left: 20px;
+}
+h2 {
+    color: rgb(143, 158, 30);
+    font-size: 35px;
+    font-weight: 600;
+}
+p {
+    font-size: 20px;
+    margin-left: 40px;
+    color: rgb(233, 229, 229);
+    font-weight: normal;
+}
+.image1{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:appear 5s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
+}
+.image1 img{
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.volume, .weight, .progressive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    padding: 11px;
+    box-shadow: 0px 2px 8px 2px rgb(73, 72, 72);
+
+}
+.footer .footerText{
+    margin-inline: 70px;
+    margin-top: 43px;
+    margin-bottom: 33px;
+}
+.footerText p{
+    top: 22px;
+}
+
+@media only  screen and (max-width: 768px) {
+    #menuList{
+        width: 100%;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(1, 1, 14);
+        gap: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon {
+        display: block;
+        margin-right: 90px;
+    }
+    #menuList {
+        transition: all 0.5s;
+    }
+    .logo h1 {
+        font-size: 23px;
+        margin-left: -30px;
+    }
+    ul li button{
+        width: 90px;
+        height: 24px;
+        font-size: 12px;
+    /* border-radius: 2px; */
+    }
+
+
+    /* HEAVY WORKOUT */
+
+    .heavy-img {
+        width: 100%;
+    }
+    .heavy-img img {
+        width: 80%;
+        margin-top: 90px;
+    }
+    .text {
+        margin-top: 20px;
+        padding: 10px;
+        margin-top: 2px;
+    }
+    .text p {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .text ul {
+        font-size: 18px;
+    }
+    .text li {
+        font-size: 14px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .text p {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    hr {
+        width: 95%;
+        margin-top: -5px;
+        margin-left: 1px;
+    }
+    h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    p {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .frequency {
+        flex-direction: column;
+    }
+    .text1 {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: -25px;
+    }
+    .text1 p {
+        margin-top: -15px;
+    }
+    .image1 {
+        width: 100%;
+    }
+    .image1 img {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .volume, .weight, .progressive {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .progressive {
+        margin-bottom: 40px;
+    }
+    .progressive .image1 img {
+        margin-top: 40px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        width: 100%;
+        margin-top: 28px;
+        padding: 3px;
+        box-shadow: grey; 
+        box-shadow: 0px 2px 8px 2px rgb(73, 72, 72); 
+    }
+    .footer .footerText{
+        margin-inline: 2px;
+        margin-top: 38px;
+        margin-bottom: 23px;
+    }
+    .footerText p{
+        top: 15px;
+        font-size: 10px;
+    }
+    .footerText h2 {
+        font-size: 12px;
+    }
+}

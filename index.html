@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+<!-- <script src="jss.js" crossorigin="anonymous"></script> -->
+   <link
+    rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <h1>FitLife</h1>
+            </div>
+
+            <ul id="menuList">
+                <li><a href="#main"  id="homes" onclick="home()">HOME</a></li>
+                <li><a href="#program" id="pro"  onclick="program()">PROGRAM</a></li>
+                <li><a href="#plan"  id="plans"  onclick="plan()">PLAN</a></li>
+                <li><a href="#blog" id="blogs" onclick="blog()">BLOG</a></li>
+                
+                <li><a href="">GALLERY</a></li>
+            
+               <!-- <li> <button > <a href="chatbot.html">ChatBot</a></button></li> -->
+                
+            </ul>
+            <div class="icon">
+                    <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
+                </div>
+        </nav>
+
+
+        <div class="main" id="main">
+            <div class="mainText">
+                <h1 >Your Fitness Journey Start Here</h1>
+                <h3>Train Hard,Stay Fit,live Better</h3>
+                <p>Strong isn’t about lifting heavy weights; it’s about lifting yourself every day, especially when quitting seems easier than trying.</p>
+                <button><a href="login.html">Join Now</a></button>
+            </div>
+
+            <img class="men" src="men.png" alt="">
+
+        </div>
+        <!-- chat icon -->
+        <div id="chat">
+            <a href="chatbot.html"><i class="fa-solid fa-message fa-bounce" style="color: #daae10;"></i>
+       <!--<p id="me">Chatme</p> -->
+</a>
+        </div>
+
+        <!-- program-->
+
+         <div class="program" id="program">
+            <div class="head">
+                <h1>Our <span>Program's</span></h1>
+            </div>
+            <div class="ourProgram">
+                 
+                    <div class="crd">
+                        <img src="dance.webp" alt="">
+                        
+                        <h2>Zumba</h2>
+                        <a href="zumba.html">Explore more</a>
+                        
+                    </div>
+                    <div class="crd">
+                        <img src="cardio.webp" alt="">
+                        <h2>Cardio</h2>
+                   <a href="cardio.html">Explore more</a>
+                    </div>
+                    <div class="crd">
+                        <img src="heavy.webp" alt="">
+                        <h2>Heavy Workout</h2>
+                      <a href="heavy.html">Explore more</a>
+                    </div>
+                
+                
+ 
+            </div>
+            
+        </div> 
+
+        <!-- plans -->
+
+        <div class="plans" id="plan">
+            <div class="head">
+                <h1>Our <span> Plan's</span></h1>
+            </div>
+            <div class="ourPlans">
+                <div class="card">
+                    <i class="fa-brands fa-simplybuilt"></i>
+                    <h3>Baic Package</h3>
+                    <h1>30 Day in $10</h1>
+                    <p>No Personal Trainer</p>
+                    <p>Valid for 30 Days</p>
+                    <p>Full Day valid</p>
+                    <button><a href="https://rzp.io/rzp/NkFoveP">Buy Plan</a></button>
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <h3>Premium Package</h3>
+                    <h1>30 Day in $30</h1>
+                    <p>Personal Trainer</p>
+                    <p>Valid for 30 Days</p>
+                    <p>Full Day valid</p>
+                    <button><a href="https://rzp.io/rzp/KRFwg28P">Buy Plan</a></button>
+
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-diamond"></i>
+                    <h3>Diamond Package</h3>
+                    <h1>30 Day in $20</h1>
+                    <p>1 Week Personal Trainer</p>
+                    <p>Valid for 30 Days</p>
+                    <p>Full Day valid</p>
+                    <button><a href="https://rzp.io/rzp/1BT1hAZ">Buy Plan</a></button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Blogs -->
+        <div class="blog" id="blog">
+            <div class="head">
+                <h1>Read <span>Blogs</span></h1>
+            </div>
+            <div class="ourBlog">
+                <div class="blogCard">
+                    <img src="blog4.jpg" alt="">
+                    <div class="blogText">
+                        <h2>How To Make Abs ?</h2>
+                    <p>Abs need clean diet, calorie control, intense core training, and consistent workouts every single day.</p>
+                     <a href="abs.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blogCard">
+                    <img src="legs.webp" alt="">
+                    <div class="blogText">
+                        <h2>How To Make legs ?</h2>
+                    <p>Train legs daily with discipline; strength grows from consistent practice and challenging resistance workouts.</p>
+                     <a href="legs.html">Read More</a>
+                    </div>
+                </div>
+                <div class="blogCard">
+                    <img src="blog5.jpg" alt="">
+                    <div class="blogText">
+                        <h2>How To Make Chest ?</h2>
+                    <p>Grow chest by lifting heavier weekly, controlling reps, isolating muscles, consistently.</p>
+                     <a href="upper.html">Read More</a>
+                    </div>
+                </div>
+                 
+                 
+                 
+                
+            </div>
+        </div>
+        <!-- gallery section -->
+         <h1 id="g">GALLERY SECTION</h1>
+         <div id ="gallery">
+            <div id="div1" ></div>
+             <div id="div2"></div>
+              <div id="div3"></div>
+              <div id="div4"></div>
+              
+         </div>
+        <div id="gallery2">
+             <div id="box1" ></div>
+             <div id="box2"></div>
+              <div id="box3"></div>
+              <div id="box4"></div>
+        </div>
+
+   <!-- coach section -->
+
+
+        <!-- conatct -->
+
+        <div class="contact" id="contact">
+            <div class="head">
+                <h1>Let's <span> Begin ...</span></h1>
+                <h2>Contact <span>US</span></h2>
+            </div>
+            <div class="start">
+                <div class="startText">
+                    <h1>Let's Go...</h1>
+                    <h2>Start Your Journey Now!</h2>
+                </div>
+                <img src="girl.png" alt="">
+            </div>
+
+            <div class="connect">
+                <h3>Connect US</h3>
+                <div class="data">
+                    <input type="text"  placeholder="Enter Name" id="name" value=""> <br>
+                    <input type="text" placeholder="Enter Mobile Number" id="number" value=""> <br>
+                    <button onclick="submit()">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footerText">
+                    <h2>About us</h2><br>
+                    <p>FitLife is your ultimate destination for achieving fitness goals.<br>  and a supportive community to help you stay motivated<br> and reach your full potential. Join us today and <br>embark on a transformative fitness journey!
+              
+              </p><br>
+        <span><i class="fa-solid fa-location-dot"></i></span> Indore India
+                <br>
+           <span><i class="fas fa-envelope"></i></span> info@fitnesspoint<br>
+              <span><i class="fa-solid fa-phone"></i></span> +91 9876543210
+            </div>
+            <div class="footerText">
+                    <h2>Plans</h2> <br>
+                    <p>Zumba</p>  <br>
+                    <p>Cardio</p> <br>
+                    <p>Heavy</p> <br>
+                    <p>Ends</p> <br>
+
+            </div>
+            <div class="footerText">
+                    <h2>Program</h2><br>
+                    <p>Basic Package</p> <br>
+                    <p>Premium package</p> <br>
+                    <p>Diamond package</p> <br>
+                    <p>Fun more</p> <br>
+
+            </div>
+            <div class="footerText">
+                    <h2>Contact US</h2><br>
+                    <p>Membership</p> <br>
+                    <p>Plans</p> <br>
+                    <p>Diamond Plan</p> <br>
+                    <p>Join Now</p> <br>
+
+            </div>
+        </div>
+    </div>
+
+     
+   <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+   
+
+    <script src="jss.js"></script>
+</body>
+
+</html>
